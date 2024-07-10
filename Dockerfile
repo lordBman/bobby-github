@@ -9,6 +9,10 @@ RUN bun install
 
 COPY . .
 
+RUN bunx prisma migrate dev --name init
+
+RUN bun run compile
+
 EXPOSE 3000
 
 CMD ["bun", "index.ts"]
