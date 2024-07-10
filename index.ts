@@ -38,7 +38,7 @@ app.use("/", (req, res)=>{
     res.status(200).sendFile(path.join(__dirname, "./public/index.html"));
 });
 
-const port = process.env.PORT|| 5000;
+const port = process.env.PORT|| 3000;
 const SERVER_START_MSG = ('Express server started on port: ' + port);
 const server = app.listen(port, () =>{
     logger.info(SERVER_START_MSG);
