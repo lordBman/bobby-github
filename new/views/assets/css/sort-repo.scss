@@ -1,0 +1,37 @@
+.border-blue-500 {
+    border-color: #3b82f6; /* Tailwind's `border-blue-500` corresponds to `#3b82f6` */
+}
+
+.sort-repo {
+    margin-bottom: 0.5rem; /* mb-2 */
+    display: flex; /* flex */
+    justify-content: center; /* justify-center */
+}
+
+.sort-repo-button {
+    padding-top: 0.625rem; /* py-2.5 */
+    padding-bottom: 0.625rem; /* py-2.5 */
+    padding-left: 1.25rem; /* px-5 */
+    padding-right: 1.25rem; /* px-5 */
+    margin-right: 0.5rem; /* me-2 */
+    margin-bottom: 0.5rem; /* mb-2 */
+    font-size: 0.75rem; /* text-xs */
+    font-size: 0.875rem; /* sm:text-sm */
+    font-weight: 600; /* font-medium */
+    color: white;
+
+    border-radius: 0.375rem; /* rounded-lg */
+    background-color: rgba(0, 0, 0, 0.2); /* bg-glass */
+    backdrop-filter: blur(10px); /* bg-glass */
+
+    &:focus {
+        outline: none; /* focus:outline-none */
+    }
+}
+  
+@media (min-width: 1024px) {
+    .sort-repo {
+      justify-content: flex-end; /* lg:justify-end */
+    }
+}
+  

@@ -1,0 +1,18 @@
+.home-main {
+    display: flex; /* flex */
+    gap: 1rem; /* gap-4 */
+    flex-direction: column; /* flex-col */
+    justify-content: center; /* justify-center */
+    align-items: flex-start; /* items-start */
+}
+
+.margin-4 {
+    margin: 1rem; /* Tailwind's `m-4` corresponds to `1rem` */
+}
+  
+@media (min-width: 1024px) {
+    .home-main {
+      flex-direction: row; /* lg:flex-row */
+    }
+}
+  

@@ -1,0 +1,49 @@
+body {
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("/images/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* dark mode looking scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #121212;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #242424;
+}
+
+.content {
+    max-width: 70rem; /* max-w-5xl */
+    margin-top: 1.25rem; /* my-5 */
+    margin-bottom: 1.25rem; /* my-5 */
+    color: #ffffff; /* text-white */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    transition-property: all; /* transition-all */
+    transition-duration: 300ms; /* duration-300 */
+    flex: 1 1 0%; /* flex-1 */
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}

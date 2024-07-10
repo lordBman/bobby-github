@@ -1,0 +1,28 @@
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    display: inline; /* inline */
+    width: 2rem; /* w-8 */
+    height: 2rem; /* h-8 */
+    color: #edf2f7; /* text-gray-200 */
+    animation: spin 1s linear infinite; /* animate-spin */
+}
+  
+.spinner svg {
+    fill: #2563eb; /* fill-blue-600 */
+}
+
+.spinner-text {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

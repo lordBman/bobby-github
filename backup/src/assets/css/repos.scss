@@ -1,0 +1,138 @@
+.branch-logo-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+    background-color: #ebf8ff; /* bg-blue-100 */
+    border-radius: 9999px; /* rounded-full */
+    margin-inline-start: -0.75rem; /* -start-3 */
+    box-shadow: 0 0 0 2rem white; /* ring-8 */
+}
+
+.branch-logo{
+    width: 1.25rem; /* w-5 */
+    height: 1.25rem; /* h-5 */
+    color: #2c5282; /* text-blue-800 */
+}
+
+.repo-details-container {
+    display: flex;
+    gap: 0.5rem; /* gap-2 */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.repo-details-name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+}
+
+.repo-details-stars {
+    background-color: #fefcbf; /* bg-yellow-100 */
+    color: #975a16; /* text-yellow-800 */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 500; /* font-medium */
+    padding-left: 0.625rem; /* px-2.5 */
+    padding-right: 0.625rem; /* px-2.5 */
+    padding-top: 0.125rem; /* py-0.5 */
+    padding-bottom: 0.125rem; /* py-0.5 */
+    border-radius: 9999px; /* rounded-full */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* gap-1 */
+}
+
+.repo-details-fork {
+    background-color: #f3e8ff; /* bg-purple-100 */
+    color: #5a3e8b; /* text-purple-800 */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 500; /* font-medium */
+    padding-left: 0.625rem; /* px-2.5 */
+    padding-right: 0.625rem; /* px-2.5 */
+    padding-top: 0.125rem; /* py-0.5 */
+    padding-bottom: 0.125rem; /* py-0.5 */
+    border-radius: 9999px; /* rounded-full */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* gap-1 */
+}
+
+.repo-details-clone {
+    cursor: pointer;
+    background-color: #d4edda; /* bg-green-100 */
+    color: #155724; /* text-green-800 */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 500; /* font-medium */
+    padding-left: 0.625rem; /* px-2.5 */
+    padding-right: 0.625rem; /* px-2.5 */
+    padding-top: 0.125rem; /* py-0.5 */
+    padding-bottom: 0.125rem; /* py-0.5 */
+    border-radius: 9999px; /* rounded-full */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* gap-1 */
+}
+
+.repo-details-time {
+    display: block;
+    margin-top: 0.25rem; /* my-1 */
+    margin-bottom: 0.25rem; /* my-1 */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 400; /* font-normal */
+    line-height: 1; /* leading-none */
+    color: #cbd5e0; /* text-gray-400 */
+}
+
+.repo-details-description {
+    margin-bottom: 1rem; /* mb-4 */
+    font-size: 1rem; /* text-base */
+    font-weight: 400; /* font-normal */
+    color: #6b7280; /* text-gray-500 */
+}
+
+@mixin w-100{
+    width: 100%;
+}
+
+.w-100 {
+   @include w-100();
+}
+
+.w-100-reponsive {
+    @include w-100();
+  
+    /* Media query for large screens */
+    @media (min-width: 1024px) {
+        width: 66.666667%; /* Set to 2/3 of the width on large screens */
+    }
+}
+
+.repos-root {
+    background-color: rgba(255, 255, 255, 0.2); /* bg-glass */
+    backdrop-filter: blur(10px); /* bg-glass */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding-left: 2rem; /* px-8 */
+    padding-right: 2rem; /* px-8 */
+    padding-top: 1.5rem; /* py-6 */
+    padding-bottom: 1.5rem; /* py-6 */
+}
+
+.repos-container {
+    position: relative; /* relative */
+    border-style: solid; /* border-s */
+    border-color: #e2e8f0; /* border-gray-200 */
+}
+
+.repos-no-found {
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    height: 8rem; /* h-32 */
+}
+  
+  
